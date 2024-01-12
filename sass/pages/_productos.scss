@@ -1,0 +1,11 @@
+.remeras {
+    background-color: $secondary-color;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+@media(min-width:600px) {
+    .remeras {
+        font-size: 3rem;
+    }
+}

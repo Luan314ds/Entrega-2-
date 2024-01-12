@@ -1,0 +1,72 @@
+%template-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: $primary-color;
+
+    @extend %template-footer;
+
+    flex-direction: column;
+    color: $secondary-color;
+
+}
+
+.social-icons-container {
+    @extend %template-footer;
+    
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media(min-width:600px) {
+    .social-icons-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width:1000px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid $secondary-color;
+    background-image: url(../images/instagram-logo.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+
+    &:nth-of-type(2) {
+        background-image: url(../images/logo-facebook.png.webp);
+    }
+
+    &:nth-of-type(3) {
+        background-image: url(../images/TikTok-logo-black-circle-png.webp);
+    }
+
+    &:nth-of-type(4) {
+        background-image: url(../images/580b57fcd9996e24bc43c53e.webp);
+    }
+
+}

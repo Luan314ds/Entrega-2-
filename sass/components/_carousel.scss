@@ -1,0 +1,22 @@
+.carousel {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media(min-width:600px) {
+    .carousel {
+        flex-direction: row;
+    }
+}
+
+
+.remera-oversize {
+    width: 300px;
+}
+
+.productos {
+    background-image: url(../images/selena-gomez-para-adidas_1920x1200_xtrafondos.com.jpg);
+}
+
